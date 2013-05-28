@@ -1,0 +1,1 @@
+dseditgroup -o edit -a everyone -t group _lpoperator
