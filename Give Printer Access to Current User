@@ -1,0 +1,1 @@
+/usr/sbin/dseditgroup -o edit -a `w | grep "[c]onsole" | awk '{print $1;}'` -t user _lpoperator
