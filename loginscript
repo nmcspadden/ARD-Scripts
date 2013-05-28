@@ -1,18 +1,10 @@
-#!/bin/bash
- 
-user="username"
-pass="password"
- 
-login() {
-/usr/bin/osascript << EOF
+osascript <<EndOfMyScript
 tell application "System Events"
-    keystroke "${1}"
-    keystroke return
-    delay 1
-    keystroke "${2}"
-    keystroke return
+keystroke "name"
+keystroke return
+delay 0.5
+keystroke "password"
+delay 0.5
+keystroke return
 end tell
-EOF
-}
- 
-login $user $pass
+EndOfMyScript
